@@ -136,15 +136,36 @@ p {
     width: 100px;
     border-radius: 15px;
 }
+
+
+
+
+
 .projects {
-    grid-column: 2 / 3;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2 / 4;
+    grid-template-rows: 1fr 1fr;
     grid-row: 3 / 5;
-    background-color: gray;
+    border: 1px solid black;
+    
 }
 
-.announcements {
+.projects .announcements {
     grid-column: 3 / 4;
-    background-color: lightseagreen;
+    padding: 20px;
+    align-self: center;
+}
+
+.projects .announcements .items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.projects .announcements hr {
+    margin-bottom: 20px;
 }
 
 .trend {
